@@ -1,0 +1,5 @@
+2026-10-14T12:50:06.893101800Z [main] [UncivFiles] Creating UncivFiles, localStoragePath: <WORKSPACE>\, externalStoragePath: C:\Users\<USER>\
+Loaded 2 rulesets in 366ms
+2026-10-14T12:50:07.763997800Z [main] [AtlasPreview] Atlas preview for Combined RuleSet ([Civ V - Gods & Kings, Huaxia Future Mobile, Extra Buildings, Warfare Expanded Lite]): 2429 entries.
+2026-10-14T12:50:07.853651400Z [main] [AtlasPreview] Atlas preview for Combined RuleSet ([Civ V - Gods & Kings, Huaxia Future Mobile, Extra Buildings, Warfare Expanded Lite, Stellar Fleet]): 2429 entries.
+RESULT newProblems=0 inheritedProblems=14 unitsAdded=3 noUnitOrTechOverrides=true

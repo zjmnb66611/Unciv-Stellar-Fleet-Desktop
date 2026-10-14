@@ -1,0 +1,26 @@
+{
+  "base": {
+    "passed": true,
+    "result": [
+      "RESULT newProblems=0 inheritedProblems=0 unitsAdded=3 noUnitOrTechOverrides=true"
+    ]
+  },
+  "standard": {
+    "passed": true,
+    "result": [
+      "RESULT newProblems=0 inheritedProblems=14 unitsAdded=3 noUnitOrTechOverrides=true"
+    ]
+  },
+  "Continued": {
+    "passed": true,
+    "result": [
+      "RESULT newProblems=0 inheritedProblems=19 unitsAdded=3 noUnitOrTechOverrides=true"
+    ]
+  },
+  "Worlds": {
+    "passed": true,
+    "result": [
+      "RESULT newProblems=0 inheritedProblems=14 unitsAdded=3 noUnitOrTechOverrides=true"
+    ]
+  }
+}

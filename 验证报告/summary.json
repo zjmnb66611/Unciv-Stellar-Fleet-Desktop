@@ -1,0 +1,46 @@
+{
+  "base": {
+    "passed": true,
+    "result": [
+      "RESULT {\"passed\":true,\"checks\":142,\"mods\":\"Stellar Fleet\"}"
+    ]
+  },
+  "standard": {
+    "passed": true,
+    "result": [
+      "RESULT {\"passed\":true,\"checks\":142,\"mods\":\"Huaxia Future Mobile,Extra Buildings,Warfare Expanded Lite,Stellar Fleet\"}"
+    ]
+  },
+  "Continued": {
+    "passed": true,
+    "result": [
+      "RESULT {\"passed\":true,\"checks\":142,\"mods\":\"Future Expansion Continued,Huaxia Future Mobile Continued,Extra Buildings,Warfare Expanded Lite,Stellar Fleet\"}"
+    ]
+  },
+  "Worlds": {
+    "passed": true,
+    "result": [
+      "RESULT {\"passed\":true,\"checks\":142,\"mods\":\"Future Worlds,Huaxia Future Mobile Worlds,Expanded Warfare Syntaxed,Warfare Expanded Lite,Extra Buildings,China Military Science,World Cooperation Organization,Nuclear Deterrence,Stellar Fleet\"}"
+    ]
+  },
+  "nuclear": {
+    "passed": true,
+    "result": [
+      "RESULT {\"passed\":true,\"checks\":142,\"mods\":\"Future Worlds,Huaxia Future Mobile Worlds,Expanded Warfare Syntaxed,Warfare Expanded Lite,Extra Buildings,China Military Science,World Cooperation Organization,Nuclear Deterrence,Stellar Fleet\"}"
+    ]
+  },
+  "standalone": {
+    "passed": true,
+    "result": [
+      "RESULT {\"passed\":true,\"checks\":142,\"mods\":\"Stellar Fleet\"}"
+    ],
+    "note": "standalone使用购买业务类做交易测试，但不加载购买代理或其他代理"
+  },
+  "legacy-agent-order": {
+    "passed": true,
+    "result": [
+      "RESULT {\"passed\":true,\"checks\":142,\"mods\":\"Stellar Fleet\"}"
+    ],
+    "note": "按本机旧增强入口的实际代理顺序加载"
+  }
+}

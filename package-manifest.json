@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0",
+  "gameVersion": "4.22.6-patch1",
+  "gameSha256": "53281110c1f2209ee7b393813e07fcf8d42a1e031d11c0505f5856627a1a0cf4",
+  "files": {
+    "mods/Stellar Fleet/Atlases.json": "1aa850ef15d837f4d7c728d909bc3f4f549399d72577f516a04393a521cffe7f",
+    "mods/Stellar Fleet/game.atlas": "2b1dd05760e0c440f128546c88701054f9201d8d0ba2ce0e7ea23ebf4d2c9e26",
+    "mods/Stellar Fleet/game.png": "d8f31d1be015e854f8e8f06e23fb5557bbfc723676fd04c38736a94a6c409f19",
+    "mods/Stellar Fleet/README.md": "a0c86b87460fa71d52b4f0a95198a9b58edaf9728b19b051356b84942052d9e7",
+    "mods/Stellar Fleet/jsons/ModOptions.json": "937ab19186df22c78c87892cc3d345d8fe57dfc9e098050d4652889200c8e767",
+    "mods/Stellar Fleet/jsons/Units.json": "8d281b510279b008fab56b3ceed8d8494be6c57e238fb27fd95a9fc64a22312d",
+    "mods/Stellar Fleet/jsons/translations/Simplified_Chinese.properties": "f03181a2b4715b23ad0cc9cfa23cc2bbaf47e8b4e67d5350ebae66f538850669",
+    "mods/Stellar Fleet/Images/UnitIcons/SF Death Star.png": "67a6fc476099351ab84042f6bd8f2a19cc4e0d2db9f98b6f3cec9e6dbb009ef1",
+    "mods/Stellar Fleet/Images/UnitIcons/SF Executor Star Dreadnought.png": "ca369e840727509975350110192b24c9b4f090e6ecbf363cad96bdd9c2835c39",
+    "mods/Stellar Fleet/Images/UnitIcons/SF Victory Star Destroyer.png": "9c03530b5ec273b368f431f4354a36bd80c23b5fd528f007e78e6d8f89c9c4f2",
+    "mods/Stellar Fleet/Images/TileSets/Minimal/Units/SF Death Star.png": "67a6fc476099351ab84042f6bd8f2a19cc4e0d2db9f98b6f3cec9e6dbb009ef1",
+    "mods/Stellar Fleet/Images/TileSets/Minimal/Units/SF Executor Star Dreadnought.png": "ca369e840727509975350110192b24c9b4f090e6ecbf363cad96bdd9c2835c39",
+    "mods/Stellar Fleet/Images/TileSets/Minimal/Units/SF Victory Star Destroyer.png": "9c03530b5ec273b368f431f4354a36bd80c23b5fd528f007e78e6d8f89c9c4f2",
+    "mods/Stellar Fleet/Images/TileSets/HexaRealm/Units/SF Death Star.png": "67a6fc476099351ab84042f6bd8f2a19cc4e0d2db9f98b6f3cec9e6dbb009ef1",
+    "mods/Stellar Fleet/Images/TileSets/HexaRealm/Units/SF Executor Star Dreadnought.png": "ca369e840727509975350110192b24c9b4f090e6ecbf363cad96bdd9c2835c39",
+    "mods/Stellar Fleet/Images/TileSets/HexaRealm/Units/SF Victory Star Destroyer.png": "9c03530b5ec273b368f431f4354a36bd80c23b5fd528f007e78e6d8f89c9c4f2",
+    "mods/Stellar Fleet/Images/TileSets/FantasyHex/Units/SF Death Star.png": "67a6fc476099351ab84042f6bd8f2a19cc4e0d2db9f98b6f3cec9e6dbb009ef1",
+    "mods/Stellar Fleet/Images/TileSets/FantasyHex/Units/SF Executor Star Dreadnought.png": "ca369e840727509975350110192b24c9b4f090e6ecbf363cad96bdd9c2835c39",
+    "mods/Stellar Fleet/Images/TileSets/FantasyHex/Units/SF Victory Star Destroyer.png": "9c03530b5ec273b368f431f4354a36bd80c23b5fd528f007e78e6d8f89c9c4f2",
+    "extensions/StellarFleet/manifest.json": "26e92483da27278d4a7c43cdbb9190eeaafd9271ceba8cf417486c88ffd2a07b",
+    "extensions/StellarFleet/start.ps1": "d0732c92ee935e67943dca0c59e8c5ccf12570716e766eae4960fbc67a0c0449",
+    "extensions/StellarFleet/stellar-fleet-agent.jar": "6effe8c11189303de397e96f3c91e935a6fe9b95bb3819fb45d6a1d9b845c065",
+    "extensions/StellarFleet/validate.ps1": "980665a0424ff08390b01ccc7a4dacb7db49a04b3830c8d0a8c10d449962d018",
+    "启动星际舰队.cmd": "bc8df2876780acfcb8c0b87f8900b7feed17448eb43f225a8d34c7c80d87052c",
+    "启动星际舰队与核组织.cmd": "301840716eaa3b7bd1691549d10709288ea671da482a43d3d0080479a231adbf"
+  }
+}

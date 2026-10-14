@@ -1,0 +1,5 @@
+2026-10-14T12:50:07.959126100Z [main] [UncivFiles] Creating UncivFiles, localStoragePath: <WORKSPACE>\, externalStoragePath: C:\Users\<USER>\
+Loaded 2 rulesets in 318ms
+2026-10-14T12:50:08.646576Z [main] [AtlasPreview] Atlas preview for Combined RuleSet ([Civ V - Gods & Kings, Future Worlds, Huaxia Future Mobile Worlds, Expanded Warfare Syntaxed, Warfare Expanded Lite, Extra Buildings, China Military Science, World Cooperation Organization, Nuclear Deterrence]): 2429 entries.
+2026-10-14T12:50:08.717361Z [main] [AtlasPreview] Atlas preview for Combined RuleSet ([Civ V - Gods & Kings, Future Worlds, Huaxia Future Mobile Worlds, Expanded Warfare Syntaxed, Warfare Expanded Lite, Extra Buildings, China Military Science, World Cooperation Organization, Nuclear Deterrence, Stellar Fleet]): 2429 entries.
+RESULT newProblems=0 inheritedProblems=14 unitsAdded=3 noUnitOrTechOverrides=true

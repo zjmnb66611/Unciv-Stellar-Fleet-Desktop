@@ -1,0 +1,82 @@
+from pathlib import Path
+import json,hashlib,shutil
+
+ROOT=Path(__file__).resolve().parents[2];W=ROOT/'work/stellar-fleet';P=ROOT/'outputs/Stellar-Fleet-1.0.0';G=ROOT/'outputs/Unciv';E=P/'extensions/StellarFleet';M=P/'mods/Stellar Fleet'
+def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
+for name in ['start.ps1','validate.ps1']:(E/name).write_text((W/name).read_text(encoding='utf-8-sig'),encoding='utf-8-sig')
+for name in ['install.ps1','rollback.ps1']:(P/name).write_text((W/name).read_text(encoding='utf-8-sig'),encoding='utf-8-sig')
+for name,nuclear in [('启动星际舰队.cmd',False),('启动星际舰队与核组织.cmd',True)]:
+    (P/name).write_text('@echo off\r\npowershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0extensions\\StellarFleet\\start.ps1" -GameDirectory "%~dp0."'+(' -NuclearOrganization' if nuclear else '')+'\r\nif errorlevel 1 pause\r\n',encoding='ascii',newline='')
+manifest=json.loads((E/'manifest.json').read_text(encoding='utf-8'))
+manifest['assetFiles']={f'mods/Stellar Fleet/{file.relative_to(M).as_posix()}':sha(file) for file in M.rglob('*') if file.is_file() and (file.suffix in ['.properties','.json'] and file.name!='Atlases.json' or file.name=='game.png' or 'Images' in file.parts)}
+canonical='\n'.join(line.strip() for line in (M/'game.atlas').read_text().splitlines() if line.strip() and not line.strip().startswith('filter:'))
+manifest['atlasRegionsSha256']=hashlib.sha256(canonical.encode()).hexdigest()
+(E/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+(P/'使用说明.md').write_text('''# 星际舰队 1.0.0
+
+为现有Unciv 4.22.6-patch1电脑端添加三个单位。完整跨地形与陆军/平民运输使用同一客户端的内存扩展；不替换Unciv.jar，不包含另一份游戏。本包不能导入原版手机的“从URL下载模组”。
+
+## 数值
+
+|单位|空军舱|地面舱（陆军和平民共用）|铁|铀|金币购买|防御战斗力|远程战斗力|生命|移动|射程|生产力|
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+|胜利级歼星舰|2|1|10|3|1000|180|200|100|6|3|1500|
+|执行者歼星舰|4|2|20|6|3000|260|300|100|6|3|3000|
+|死星|5|4|40|15|禁止|500|600|100|4|6|6000|
+
+所有文明均可建造；隐形技术、机器人学与高级弹道学同时完成后解锁，归入信息时代。这些锚点避免Continued把纳米技术/核聚变移入未来时代的问题。本包不添加科技列、不覆盖原版或其他模组单位和晋升。远程战斗力不是固定扣血，实际伤害继续由原版计算；没有额外核爆、范围爆炸或清除城市效果。血量采用原版100生命。铁和铀按原版持续占用，不是每次攻击消耗。
+
+## 安装与启用
+
+安装后可以继续使用已有的Unciv增强快捷方式；安装器只给既有东风/核组织增强脚本追加末位星际舰队代理，不向原生Unciv.json写入代理参数。也可以从游戏目录运行“启动星际舰队.cmd”。需要完整核组织规则时运行“启动星际舰队与核组织.cmd”或原“启动核不扩散组织.cmd”。核组织与独立东风代理互斥，启动器会正确选择其中一个。
+
+在新建游戏的扩展模组中勾选 **Stellar Fleet（星际舰队）**。现有存档的启用模组列表不会被安装器自动修改；本次没有修改已有对局、推进回合或覆盖存档。已载有星舰的对局需要一直保留本模组和对应引擎扩展。
+
+其他同版本电脑解压本包后，在PowerShell运行：
+
+`powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\\install.ps1 -GameDirectory "你的Unciv目录"`
+
+加 `-ValidateOnly` 只检查版本、包内文件和原增强入口，不安装、不启动。安装器支持原版同版本客户端；没有其他扩展时，独立星际舰队入口仅加载本包。游戏已运行时，用户需自行保存并退出，再用增强入口重新打开。
+
+## 搭载与战斗
+
+在星舰的原生单位行动栏点击“星际机库 / 运输舱”；相邻友方单位也会显示“登舰 / 卸载”。登舰要求己方单位、距离不超过1格、有行动力且对应舱未满。任意空军包括隐形轰炸机、原子弹和导弹，均占一个空军位；陆军和平民共用地面位，不包括水面舰船或另一艘星舰。
+
+登舰耗尽载员本回合行动力。地面载员在舱内不能移动、攻击、工作或建城；单位身份、生命、经验、晋升及资源/维护费保留。卸载需要母舰行动力和相邻合法空位，每次消耗母舰1移动力，载员本回合仍不可行动。地面单位只卸载到合法陆地；空军还可以走原生转场。
+
+母舰移动时全部载员随舰。原生保存、读档和克隆保留各自母舰关系。母舰因战斗、核爆或删除而摧毁时，舰上空军、陆军和平民全部一并摧毁；已卸载单位不受影响。不会自动逃生。
+
+三种星舰可以跨越海洋、陆地、沙漠、山地等地形，每格基本移动成本为1；移动力与现代海军相近。跨地形不等于无视国家边界、敌军占格或城市占领规则。晋升沿用远程军舰树，可使用轰炸、瞄准、射程、后勤等原生路线；第三方模组如何扩展该树，仍由该模组决定。
+
+## 兼容性与验证边界
+
+使用SF前缀独立名称，不替代原版单位、不覆盖其他模组科技、文明、时代、建筑或晋升。引擎扩展后置挂接，可与先前的东风优化或核组织合并代理及一键购买共用。载员状态使用单位原生整数状态表和格内单位列表，不引入额外存档字段或外部存档文件。
+
+已测试组合分别为原版、华夏标准版、Continued+对应华夏版、Future Worlds+对应华夏版及现有军事/建筑/中国军事科学/世界合作组织/核威慑组合，并另外加载完整核组织代理测试。不能据此保证任意规则集、其他游戏版本或所有第三方模组兼容；Continued与Worlds仍应分别配套，不能因本包通过测试就把互斥的大型扩展同时启用。
+
+测试调用实际交付代理和原生游戏引擎，使用隔离内存对局，覆盖双舱容量、实际跨地形移动、资源和金币、科技限制、真实JSON保存恢复、母舰击毁、核爆、卸载与一键购买。原生规则校验为OK。没有启动用户游戏或在实际游戏窗口操作新按钮；按钮布局、实际点击体验和AI主动装载地面部队尚无现场验证。AI仍由原版控制，可生产星舰并使用原生战斗/空军机制；本包未为AI实现新的地面登舰规划。
+
+## 回退
+
+安装备份位于游戏目录 `extension-backups/StellarFleet-1.0.0-时间`。回退命令：
+
+`powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\\rollback.ps1 -GameDirectory "你的Unciv目录" -BackupDirectory "本次安装备份目录"`
+
+回退保留安装后被用户再次编辑的文件，不启停游戏或改动存档。先处理包含本包单位的存档，再移除扩展，避免载员失去对应运输规则。
+
+## 素材与源码
+
+三张黑色透明剪影使用内置ImageGen，参考用户提供的三张图片生成；胜利级已按反馈改为前尖后宽的锥形。素材源文件保留高清透明PNG，游戏采用128像素导出图，并为FantasyHex、HexaRealm、Minimal提供对应贴图和原生LibGDX图集。生成提示词见“素材源文件/生成提示词.md”。代码和构建、测试、安装脚本位于source；原项目work/stellar-fleet可继续修改。代码沿用项目MPL-2.0，ASM遵循其BSD-3-Clause许可。
+''',encoding='utf-8')
+(M/'README.md').write_text('星际舰队：完整能力需要配套电脑端扩展与增强启动入口。游戏内勾选Stellar Fleet。请阅读外层使用说明；原版手机不能运行本扩展。\n',encoding='utf-8')
+for name in ['MPL-2.0.txt','ASM-BSD-3-Clause.txt']:
+    source=ROOT/'outputs/Unciv-Desktop-Enhancements-2.1.0/licenses'/name
+    (P/'licenses').mkdir(exist_ok=True);shutil.copyfile(source,P/'licenses'/name)
+for p in W.iterdir():
+    if p.suffix in ['.java','.py','.ps1']:shutil.copyfile(p,P/'source'/p.name)
+files={p.relative_to(P).as_posix():sha(p) for folder in ['mods','extensions'] for p in (P/folder).rglob('*') if p.is_file() and 'logs' not in p.parts}
+files.update({p.name:sha(p) for p in P.glob('*.cmd')})
+(P/'package-manifest.json').write_text(json.dumps({'version':'1.0.0','gameVersion':'4.22.6-patch1','gameSha256':sha(G/'Unciv.jar'),'files':files},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+shutil.copyfile(W/'rules-validation.txt',P/'验证报告/原生规则校验.txt')
+print('Package finalized:',len(files),'managed files')

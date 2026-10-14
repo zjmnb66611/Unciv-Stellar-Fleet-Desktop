@@ -1,0 +1,5 @@
+2026-10-14T12:50:06.893101800Z [main] [UncivFiles] Creating UncivFiles, localStoragePath: <WORKSPACE>\, externalStoragePath: C:\Users\<USER>\
+Loaded 2 rulesets in 380ms
+2026-10-14T12:50:07.598720500Z [main] [AtlasPreview] Atlas preview for Civ V - Gods & Kings: 2429 entries.
+2026-10-14T12:50:07.685537400Z [main] [AtlasPreview] Atlas preview for Combined RuleSet ([Civ V - Gods & Kings, Stellar Fleet]): 2429 entries.
+RESULT newProblems=0 inheritedProblems=0 unitsAdded=3 noUnitOrTechOverrides=true

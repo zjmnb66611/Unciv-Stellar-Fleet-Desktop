@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "nativeGameJarAndConfigUnchanged": true,
+  "bothOldLaunchersRestored": true,
+  "postInstallUserEditPreserved": true,
+  "newAgentRemovedByRollback": true,
+  "gameStarted": false,
+  "assets": [
+    {
+      "file": "SF Death Star.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBlackFraction": 1.0
+    },
+    {
+      "file": "SF Executor Star Dreadnought.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBlackFraction": 1.0
+    },
+    {
+      "file": "SF Victory Star Destroyer.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBlackFraction": 1.0
+    }
+  ]
+}

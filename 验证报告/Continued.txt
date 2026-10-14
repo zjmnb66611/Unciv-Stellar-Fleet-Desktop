@@ -1,0 +1,148 @@
+[东风优化] 超大范围查询和海基搭载已加载；不改变核组织外交规则。
+[批量购买] 已挂接城市购买队列按钮；等待用户操作。
+[星际舰队] 三种跨地形星舰、独立双舱、固定金币价和单位行动栏已加载。
+2026-10-14T12:47:48.141217600Z [main] [UncivFiles] Creating UncivFiles, localStoragePath: <WORKSPACE>\, externalStoragePath: C:\Users\<USER>\
+Loaded 2 rulesets in 269ms
+PASS SF Victory Star Destroyer所有文明可用
+PASS SF Victory Star Destroyer归于信息时代
+PASS SF Victory Star Destroyer准确金币价/死星不可金币购买
+PASS SF Victory Star Destroyer内陆城市不受海军海岸生产限制
+PASS SF Executor Star Dreadnought所有文明可用
+PASS SF Executor Star Dreadnought归于信息时代
+PASS SF Executor Star Dreadnought准确金币价/死星不可金币购买
+PASS SF Executor Star Dreadnought内陆城市不受海军海岸生产限制
+PASS SF Death Star所有文明可用
+PASS SF Death Star归于信息时代
+PASS SF Death Star准确金币价/死星不可金币购买
+PASS SF Death Star内陆城市不受海军海岸生产限制
+PASS 死星原生禁购检查生效
+PASS SF Death Star原生资源占用数值正确
+PASS SF Executor Star Dreadnought原生资源占用数值正确
+PASS SF Victory Star Destroyer原生资源占用数值正确
+PASS 可选原生远程军舰晋升
+PASS 实际单位攻击射程为3/6格
+PASS SF Victory Star Destroyer原生购买实际扣除准确金币
+PASS SF Executor Star Dreadnought原生购买实际扣除准确金币
+PASS 金币不足时原生购买按钮禁用
+PASS 铀不足时仍受原生资源限制
+PASS 缺少高级弹道学时不能提前解锁
+PASS 信息时代两项科技满足后可正常建造
+PASS 一键购买实际购入胜利级并跳过禁购死星
+PASS SF Victory Star Destroyer可搭载原版禁止普通航母搭载的隐形轰炸机
+PASS 实际装载隐形轰炸机
+PASS 陆军在独立舱内且不覆盖母舰格
+PASS 舱内地面单位不能行动或恢复行动力
+PASS 舱内地面单位没有建造/建城/自动化等原生行动
+PASS 空军舱满拒绝继续装载
+PASS 陆军和平民共用地面舱且满舱拒绝
+PASS 拒绝异国单位搭载
+PASS 满舱状态仍识别已在舰上的载员
+PASS SF Victory Star Destroyer可进入Coast
+PASS 跨Coast每格消耗1移动力
+PASS 满载舰实际移动，全部载员随舰
+PASS 母舰移动不额外耗尽舰载空军行动力
+PASS SF Victory Star Destroyer可进入Ocean
+PASS 跨Ocean每格消耗1移动力
+PASS 满载舰实际移动，全部载员随舰
+PASS 母舰移动不额外耗尽舰载空军行动力
+PASS SF Victory Star Destroyer可进入Mountain
+PASS 跨Mountain每格消耗1移动力
+PASS 满载舰实际移动，全部载员随舰
+PASS 母舰移动不额外耗尽舰载空军行动力
+PASS SF Victory Star Destroyer可进入Desert
+PASS 跨Desert每格消耗1移动力
+PASS 满载舰实际移动，全部载员随舰
+PASS 母舰移动不额外耗尽舰载空军行动力
+PASS SF Victory Star Destroyer可进入Grassland
+PASS 跨Grassland每格消耗1移动力
+PASS 满载舰实际移动，全部载员随舰
+PASS 母舰移动不额外耗尽舰载空军行动力
+PASS 真实JSON存档往返恢复全部载员
+PASS 存档恢复保留载员生命、经验和所属母舰
+PASS 原生克隆同样保留载员关系
+PASS 相邻合法陆地可卸载
+PASS 卸载不复制单位并保留生命
+PASS 卸载消耗母舰1移动力，载员本回合不可行动
+PASS 母舰被击毁时所有剩余空军陆军平民同步摧毁
+PASS 已卸载陆军不随母舰摧毁
+PASS 主动删除母舰同样不自动保全载员
+PASS 原生核爆摧毁母舰时地面载员一并摧毁
+PASS SF Executor Star Dreadnought可搭载原版禁止普通航母搭载的隐形轰炸机
+PASS 实际装载隐形轰炸机
+PASS 陆军在独立舱内且不覆盖母舰格
+PASS 舱内地面单位不能行动或恢复行动力
+PASS 舱内地面单位没有建造/建城/自动化等原生行动
+PASS 空军舱满拒绝继续装载
+PASS 陆军和平民共用地面舱且满舱拒绝
+PASS 拒绝异国单位搭载
+PASS 满舱状态仍识别已在舰上的载员
+PASS SF Executor Star Dreadnought可进入Coast
+PASS 跨Coast每格消耗1移动力
+PASS 满载舰实际移动，全部载员随舰
+PASS 母舰移动不额外耗尽舰载空军行动力
+PASS SF Executor Star Dreadnought可进入Ocean
+PASS 跨Ocean每格消耗1移动力
+PASS 满载舰实际移动，全部载员随舰
+PASS 母舰移动不额外耗尽舰载空军行动力
+PASS SF Executor Star Dreadnought可进入Mountain
+PASS 跨Mountain每格消耗1移动力
+PASS 满载舰实际移动，全部载员随舰
+PASS 母舰移动不额外耗尽舰载空军行动力
+PASS SF Executor Star Dreadnought可进入Desert
+PASS 跨Desert每格消耗1移动力
+PASS 满载舰实际移动，全部载员随舰
+PASS 母舰移动不额外耗尽舰载空军行动力
+PASS SF Executor Star Dreadnought可进入Grassland
+PASS 跨Grassland每格消耗1移动力
+PASS 满载舰实际移动，全部载员随舰
+PASS 母舰移动不额外耗尽舰载空军行动力
+PASS 真实JSON存档往返恢复全部载员
+PASS 存档恢复保留载员生命、经验和所属母舰
+PASS 原生克隆同样保留载员关系
+PASS 相邻合法陆地可卸载
+PASS 卸载不复制单位并保留生命
+PASS 卸载消耗母舰1移动力，载员本回合不可行动
+PASS 母舰被击毁时所有剩余空军陆军平民同步摧毁
+PASS 已卸载陆军不随母舰摧毁
+PASS 主动删除母舰同样不自动保全载员
+PASS 原生核爆摧毁母舰时地面载员一并摧毁
+PASS SF Death Star可搭载原版禁止普通航母搭载的隐形轰炸机
+PASS 实际装载隐形轰炸机
+PASS 陆军在独立舱内且不覆盖母舰格
+PASS 舱内地面单位不能行动或恢复行动力
+PASS 舱内地面单位没有建造/建城/自动化等原生行动
+PASS 空军舱满拒绝继续装载
+PASS 陆军和平民共用地面舱且满舱拒绝
+PASS 拒绝异国单位搭载
+PASS 满舱状态仍识别已在舰上的载员
+PASS SF Death Star可进入Coast
+PASS 跨Coast每格消耗1移动力
+PASS 满载舰实际移动，全部载员随舰
+PASS 母舰移动不额外耗尽舰载空军行动力
+PASS SF Death Star可进入Ocean
+PASS 跨Ocean每格消耗1移动力
+PASS 满载舰实际移动，全部载员随舰
+PASS 母舰移动不额外耗尽舰载空军行动力
+PASS SF Death Star可进入Mountain
+PASS 跨Mountain每格消耗1移动力
+PASS 满载舰实际移动，全部载员随舰
+PASS 母舰移动不额外耗尽舰载空军行动力
+PASS SF Death Star可进入Desert
+PASS 跨Desert每格消耗1移动力
+PASS 满载舰实际移动，全部载员随舰
+PASS 母舰移动不额外耗尽舰载空军行动力
+PASS SF Death Star可进入Grassland
+PASS 跨Grassland每格消耗1移动力
+PASS 满载舰实际移动，全部载员随舰
+PASS 母舰移动不额外耗尽舰载空军行动力
+PASS 真实JSON存档往返恢复全部载员
+PASS 存档恢复保留载员生命、经验和所属母舰
+PASS 原生克隆同样保留载员关系
+PASS 相邻合法陆地可卸载
+PASS 卸载不复制单位并保留生命
+PASS 卸载消耗母舰1移动力，载员本回合不可行动
+PASS 母舰被击毁时所有剩余空军陆军平民同步摧毁
+PASS 已卸载陆军不随母舰摧毁
+PASS 主动删除母舰同样不自动保全载员
+PASS 原生核爆摧毁母舰时地面载员一并摧毁
+RESULT {"passed":true,"checks":142,"mods":"Future Expansion Continued,Huaxia Future Mobile Continued,Extra Buildings,Warfare Expanded Lite,Stellar Fleet"}

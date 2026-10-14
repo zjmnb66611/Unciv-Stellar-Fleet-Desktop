@@ -1,0 +1,104 @@
+[
+  {
+    "name": "SF Victory Star Destroyer",
+    "unitType": "Ranged Water",
+    "movement": 6,
+    "strength": 180,
+    "rangedStrength": 200,
+    "range": 3,
+    "cost": 1500,
+    "requiredTech": "Stealth",
+    "uniques": [
+      "Consumes [10] [Iron]",
+      "Consumes [3] [Uranium]",
+      "Can carry [2] [Air] units",
+      "Can pass through impassable tiles",
+      "Ignores terrain cost",
+      "Ranged attacks may be performed over obstacles",
+      "Never appears as a Barbarian unit",
+      "Only available <after discovering [Advanced Ballistics]>",
+      "Only available <after discovering [Robotics]>",
+      "Can be purchased for [1000] [Gold] [in all cities]"
+    ],
+    "attackSound": "shipguns",
+    "civilopediaText": [
+      {
+        "text": "所有文明可用。信息时代晚期需隐形技术、机器人学和高级弹道学。空军2位、陆军或平民共用1位；载员随母舰移动，母舰摧毁时全部载员摧毁。"
+      },
+      {
+        "text": "完整跨地形移动和地面运输需要随包电脑端扩展。登舰/卸载入口位于单位行动栏；地面舱不占原生军事和平民格。"
+      },
+      {
+        "text": "每回合移动6格，远程攻击射程3格。使用原版远程海军晋升树。资源按原版规则持续占用；未增加爆炸半径。"
+      }
+    ]
+  },
+  {
+    "name": "SF Executor Star Dreadnought",
+    "unitType": "Ranged Water",
+    "movement": 6,
+    "strength": 260,
+    "rangedStrength": 300,
+    "range": 3,
+    "cost": 3000,
+    "requiredTech": "Stealth",
+    "uniques": [
+      "Consumes [20] [Iron]",
+      "Consumes [6] [Uranium]",
+      "Can carry [4] [Air] units",
+      "Can pass through impassable tiles",
+      "Ignores terrain cost",
+      "Ranged attacks may be performed over obstacles",
+      "Never appears as a Barbarian unit",
+      "Only available <after discovering [Advanced Ballistics]>",
+      "Only available <after discovering [Robotics]>",
+      "Can be purchased for [3000] [Gold] [in all cities]"
+    ],
+    "attackSound": "shipguns",
+    "civilopediaText": [
+      {
+        "text": "所有文明可用。信息时代晚期需隐形技术、机器人学和高级弹道学。空军4位、陆军或平民共用2位；载员随母舰移动，母舰摧毁时全部载员摧毁。"
+      },
+      {
+        "text": "完整跨地形移动和地面运输需要随包电脑端扩展。登舰/卸载入口位于单位行动栏；地面舱不占原生军事和平民格。"
+      },
+      {
+        "text": "每回合移动6格，远程攻击射程3格。使用原版远程海军晋升树。资源按原版规则持续占用；未增加爆炸半径。"
+      }
+    ]
+  },
+  {
+    "name": "SF Death Star",
+    "unitType": "Ranged Water",
+    "movement": 4,
+    "strength": 500,
+    "rangedStrength": 600,
+    "range": 6,
+    "cost": 6000,
+    "requiredTech": "Stealth",
+    "uniques": [
+      "Consumes [40] [Iron]",
+      "Consumes [15] [Uranium]",
+      "Can carry [5] [Air] units",
+      "Can pass through impassable tiles",
+      "Ignores terrain cost",
+      "Ranged attacks may be performed over obstacles",
+      "Never appears as a Barbarian unit",
+      "Only available <after discovering [Advanced Ballistics]>",
+      "Only available <after discovering [Robotics]>",
+      "Cannot be purchased"
+    ],
+    "attackSound": "shipguns",
+    "civilopediaText": [
+      {
+        "text": "所有文明可用。信息时代晚期需隐形技术、机器人学和高级弹道学。空军5位、陆军或平民共用4位；载员随母舰移动，母舰摧毁时全部载员摧毁。"
+      },
+      {
+        "text": "完整跨地形移动和地面运输需要随包电脑端扩展。登舰/卸载入口位于单位行动栏；地面舱不占原生军事和平民格。"
+      },
+      {
+        "text": "每回合移动4格，远程攻击射程6格。使用原版远程海军晋升树。资源按原版规则持续占用；未增加爆炸半径。"
+      }
+    ]
+  }
+]

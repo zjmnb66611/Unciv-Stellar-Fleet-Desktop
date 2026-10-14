@@ -1,0 +1,8 @@
+2026-10-14T12:32:47.895759300Z [main] [UncivFiles] Creating UncivFiles, localStoragePath: <WORKSPACE>\, externalStoragePath: C:\Users\<USER>\
+Loaded 2 rulesets in 314ms
+2026-10-14T12:32:48.469518100Z [main] [AtlasPreview] Atlas preview for Combined RuleSet ([Civ V - Gods & Kings, Stellar Fleet]): 2429 entries.
+2026-10-14T12:32:48.523991500Z [main] [AtlasPreview] Atlas preview for Civ V - Gods & Kings: 2429 entries.
+BASE: OK
+COMBINED: OK
+FILES_CHECKED: outputs/Stellar-Fleet-1.0.0/mods/Stellar Fleet
+COUNTS nations=83 units=130 buildings=124 techs=80 eras=9
